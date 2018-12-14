@@ -1,9 +1,10 @@
+# A description of what this class does
+#
+# @summary A short summary of the purpose of this class
+#
+# @example
+#   include ssh::params
 class ssh::params {
-
-  # ===============
-  # Class Variables
-  # ===============
-
   $ssh_service_enable         = true
   $ssh_service_ensure         = 'running'
   $ssh_config_x11forwarding   = false
@@ -14,3 +15,4 @@ class ssh::params {
   $ssh_config_strictmodes     = true
   $ssh_config_permitrootlogin = true
 }
+
