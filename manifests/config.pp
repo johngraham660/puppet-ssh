@@ -12,7 +12,7 @@ class ssh::config {
     group   => 'root',
     mode    => '0600',
     type    => 'file',
-    content => template('sshd_config.erb'),
+    content => template('ssh/sshd_config.erb'),
     notify  => Service['sshd'],
     require => Package[$ssh::package],
   }
