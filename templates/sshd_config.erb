@@ -43,11 +43,8 @@ SyslogFacility AUTHPRIV
 # ==============================
 # Puppet manages PermitRootLogin
 # ==============================
-<% if $ssh::ssh_config_permitrootlogin == true %>
-PermitRootLogin without-password
-<% else %>
+PermitRootLogin <%= scope['ssh::ssh_config_permitrootlogin'] %>
 #PermitRootLogin yes
-<% end %>
 
 # ===========================
 # Puppet mmanages StrictModes
