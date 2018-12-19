@@ -14,5 +14,7 @@ class ssh::params {
   $ssh_config_use_dns         = 'no'
   $ssh_config_strictmodes     = 'yes'
   $ssh_config_permitrootlogin = 'without-password'
+  $ssh_package_server         = 'openssh-server'
+  $ssh_package_client         = 'openssh-client'
 }
 

@@ -7,11 +7,10 @@
 class ssh::config {
 
   file { '/etc/ssh/sshd_config':
-    ensure  => 'file',
+    ensure  => 'present',
     owner   => 'root',
     group   => 'root',
     mode    => '0600',
-    type    => 'file',
     content => template('ssh/sshd_config.erb'),
     notify  => Service['sshd'],
     require => Package[$ssh::package],
@@ -22,7 +21,6 @@ class ssh::config {
     owner  => 'root',
     group  => 'root',
     mode   => '0644',
-    type   => 'file',
     source => 'puppet:///modules/ssh/banner',
   }
 }
