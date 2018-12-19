@@ -32,7 +32,7 @@ class ssh (
   # ===============
   # Validate Inputs
   # ===============
-  validate_bool($::service_enabled)
+	#validate_bool($::service_enabled)
   validate_string($::service_ensure)
   validate_string($::ssh_config_x11forwarding)
   validate_string($::ssh_config_print_motd)
