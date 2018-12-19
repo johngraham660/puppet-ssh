@@ -43,12 +43,12 @@ SyslogFacility AUTHPRIV
 # ==============================
 # Puppet manages PermitRootLogin
 # ==============================
-PermitRootLogin <%= @ssh_config_permitrootlogin %>
+PermitRootLogin <%= scope['ssh::ssh_config_permitrootlogin'] %>
 
 # ===========================
 # Puppet mmanages StrictModes
 # ===========================
-StrictModes <%= @ssh_config_strictmodes %>
+StrictModes <%= scope['ssh::ssh_config_strictmodes'] %>
 
 #MaxAuthTries 6
 #MaxSessions 10
@@ -115,7 +115,7 @@ UsePAM yes
 # ===============================
 # puppet configures X11Forwarding
 # ===============================
-X11Forwarding <%= @ssh_config_x11forwarding %>
+X11Forwarding <%= scope['ssh::ssh_config_x11forwarding'] %>
 
 #X11DisplayOffset 10
 #X11UseLocalhost yes
@@ -124,7 +124,7 @@ X11Forwarding <%= @ssh_config_x11forwarding %>
 # ======================
 # puppet configures MOTD
 # ======================
-PrintMotd <%= @ssh_config_print_motd %>
+PrintMotd <%= scope['ssh::ssh_config_print_motd'] %>
 
 #PrintLastLog yes
 #TCPKeepAlive yes
@@ -136,7 +136,7 @@ PrintMotd <%= @ssh_config_print_motd %>
 #ClientAliveCountMax 3
 #ShowPatchLevel no
 
-UseDNS <%= @ssh_config_use_dns %>
+UseDNS <%= scope['ssh::ssh_config_use_dns'] %>
 
 #PidFile /var/run/sshd.pid
 #MaxStartups 10:30:100
@@ -145,7 +145,7 @@ UseDNS <%= @ssh_config_use_dns %>
 #VersionAddendum none
 
 # no default banner path
-Banner <%= @ssh_config_banner_path %>
+Banner <%= scope['ssh::ssh_config_banner_path'] %>
 
 Accept locale-related environment variables
 AcceptEnv LANG LC_CTYPE LC_NUMERIC LC_TIME LC_COLLATE LC_MONETARY LC_MESSAGES
