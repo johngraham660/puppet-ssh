@@ -34,11 +34,11 @@ class ssh (
   # ===============
   validate_bool($::service_enabled)
   validate_string($::service_ensure)
-  validate_bool($::ssh_config_x11forwarding)
-  validate_bool($::ssh_config_print_motd)
-  validate_bool($::ssh_config_print_banner)
+  validate_string($::ssh_config_x11forwarding)
+  validate_string($::ssh_config_print_motd)
+  validate_string($::ssh_config_print_banner)
   validate_string($::ssh_config_banner_path)
-  validate_bool($::ssh_config_use_dns)
-  validate_bool($::ssh_config_strictmodes)
-  validate_bool($::ssh_config_permitrootlogin)
+  validate_string($::ssh_config_use_dns)
+  validate_string($::ssh_config_strictmodes)
+  validate_string($::ssh_config_permitrootlogin)
 }
