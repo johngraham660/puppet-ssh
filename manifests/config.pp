@@ -16,9 +16,9 @@ class ssh::config {
     require => Package[$ssh::package],
   }
 
-  file { '/etc/banner':
+  file { '/etc/issue':
     ensure => file,
-    source => 'puppet:///modules/ssh/banner',
+    source => 'puppet:///modules/ssh/issue',
     owner  => 'root',
     group  => 'root',
     mode   => '0644',
