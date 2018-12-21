@@ -11,7 +11,7 @@ class ssh::params {
   $ssh_config_print_motd      = 'yes'
   $ssh_config_print_banner    = 'yes'
   $ssh_config_banner_path     = '/etc/issue'
-  $ssh_config_banner_content  = 'puppet:///modules/ssh/issue'
+  $ssh_config_banner_content  = 'puppet:///modules/ssh/files/issue'
   $ssh_config_use_dns         = 'no'
   $ssh_config_strictmodes     = 'yes'
   $ssh_config_permitrootlogin = 'without-password'
