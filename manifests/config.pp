@@ -18,6 +18,7 @@ class ssh::config {
 
   file { '/etc/issue':
     ensure => file,
+    name   => '/etc/issue',
     source => 'puppet:///modules/ssh/issue',
     owner  => 'root',
     group  => 'root',
