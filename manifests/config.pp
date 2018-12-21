@@ -17,10 +17,10 @@ class ssh::config {
   }
 
   file { '/etc/banner':
-    ensure => 'file',
+    ensure => file,
+    source => 'puppet:///modules/ssh/banner',
     owner  => 'root',
     group  => 'root',
     mode   => '0644',
-    source => 'puppet:///modules/ssh/banner',
   }
 }
