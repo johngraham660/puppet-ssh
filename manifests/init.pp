@@ -18,6 +18,7 @@ class ssh (
   $ssh_config_x11forwarding   = $::ssh::params::ssh_config_x11forwarding,
   $ssh_config_print_motd      = $::ssh::params::ssh_config_print_motd,
   $ssh_config_print_banner    = $::ssh::params::ssh_config_print_banner,
+  $ssh_config_banner_content  = $::ssh::params::ssh_config_banner_content,
   $ssh_config_banner_path     = $::ssh::params::ssh_config_banner_path,
   $ssh_config_use_dns         = $::ssh::params::ssh_config_use_dns,
   $ssh_config_strictmodes     = $::ssh::params::ssh_config_strictmodes,
