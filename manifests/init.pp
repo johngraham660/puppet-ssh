@@ -23,6 +23,7 @@ class ssh (
   $ssh_config_use_dns         = $::ssh::params::ssh_config_use_dns,
   $ssh_config_strictmodes     = $::ssh::params::ssh_config_strictmodes,
   $ssh_config_permitrootlogin = $::ssh::params::ssh_config_permitrootlogin,
+  $ssh_package_server         = $::ssh::params::ssh_package_server,
 
 ) inherits ssh::params {
 
@@ -31,12 +32,12 @@ class ssh (
   ~> class{'ssh::service': }
   -> Class['ssh']
 
-  validate_re($ssh_config_x11forwarding, [ '^yes$', '^no$' ])
-  validate_re($ssh_config_print_motd, [ '^yes$', '^no$' ])
-  validate_re($ssh_config_use_dns, [ '^yes$', '^no$' ])
-  validate_re($ssh_config_strictmodes, [ '^yes$', '^no$'])
-  validate_re($ssh_config_permitrootlogin, [ '^yes$', '^no$', '^without-password$' ])
-  validate_string($ssh_config_print_banner)
-  validate_string($ssh_config_banner_path)
+  #validate_re($ssh_config_x11forwarding, [ '^yes$', '^no$' ])
+  #validate_re($ssh_config_print_motd, [ '^yes$', '^no$' ])
+  #validate_re($ssh_config_use_dns, [ '^yes$', '^no$' ])
+  #validate_re($ssh_config_strictmodes, [ '^yes$', '^no$'])
+  #validate_re($ssh_config_permitrootlogin, [ '^yes$', '^no$', '^without-password$' ])
+  #validate_string($ssh_config_print_banner)
+  #validate_string($ssh_config_banner_path)
 
 }

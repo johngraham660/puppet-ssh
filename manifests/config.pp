@@ -13,7 +13,7 @@ class ssh::config {
     mode    => '0600',
     content => template('ssh/sshd_config.erb'),
     notify  => Service['sshd'],
-    require => Package[$ssh::package],
+    require => Package[$ssh::ssh_package_server],
   }
 
   file { '/etc/issue':
