@@ -6,7 +6,7 @@
 #   include ssh::install
 class ssh::install {
 
-  package { $ssh::ssh_package_server:
-    ensure => installed,
+  package { 'openssh-server':
+    ensure => present,
   }
 }

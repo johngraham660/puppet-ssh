@@ -18,4 +18,3 @@ class ssh::params {
   $ssh_package_server         = 'openssh-server'
   $ssh_package_client         = 'openssh-client'
 }
-

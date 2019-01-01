@@ -7,7 +7,7 @@
 class ssh::service {
 
   service { 'sshd':
-    ensure => $ssh::ssh_service_ensure,
-    enable => $ssh::ssh_service_enable,
+    ensure => 'running',
+    enable => true,
   }
 }
