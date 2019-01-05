@@ -6,7 +6,7 @@
 
 class ssh::config {
 
-  file { '/etc/ssh/sshd_config':
+  file { 'sshd_config':
     ensure  => file,
     path    => '/etc/ssh/sshd_config',
     owner   => 'root',
