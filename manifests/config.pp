@@ -6,9 +6,6 @@
 
 class ssh::config {
 
-  include ssh::service
-  include ssh::install
-
   file { '/etc/ssh/sshd_config':
     ensure  => 'present',
     path    => '/etc/ssh/sshd_config',
@@ -16,8 +13,8 @@ class ssh::config {
     group   => 'root',
     mode    => '0600',
     content => template('ssh/sshd_config.erb'),
-    notify  => Service['sshd'],
-    require => Package['openssh-server'],
+    require => Class['ssh::install'],
+    notify  => Class['ssh::service'],
   }
 
   file { '/etc/issue':
