@@ -16,7 +16,6 @@ class ssh (
 
   $ssh_service_enable         = $::ssh::params::ssh_service_enable,
   $ssh_service_ensure         = $::ssh::params::ssh_service_ensure,
-  $ssh_service_config         = $::ssh::params::ssh_service_config,
   $ssh_config_x11forwarding   = $::ssh::params::ssh_config_x11forwarding,
   $ssh_config_print_motd      = $::ssh::params::ssh_config_print_motd,
   $ssh_config_print_banner    = $::ssh::params::ssh_config_print_banner,
