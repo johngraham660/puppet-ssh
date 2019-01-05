@@ -3,8 +3,11 @@
 # @summary A short summary of the purpose of this class
 #
 # @example
-#   include ssh::config
+
 class ssh::config {
+
+  include ssh::service
+  include ssh::install
 
   file { '/etc/ssh/sshd_config':
     ensure  => 'present',
