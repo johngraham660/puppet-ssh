@@ -1,0 +1,5 @@
+{
+    "puppet.editorService.modulePath": "/Users/jgr78/git/puppet-modules",
+    "puppet.installDirectory": "/opt/puppetlabs/pdk",
+    "puppet.installType": "pdk"
+}
