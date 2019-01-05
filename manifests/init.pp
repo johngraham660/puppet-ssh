@@ -3,6 +3,7 @@
 # ================================================
 # @param ssh_service_enable [Boolean] Ensure the service is enabled in systemd
 # @param ssh_service_ensure [String] Ensure the service is running
+# @param ssh_service_config [String] The full path to the sshd_config file
 # @param ssh_config_x11forwarding [Boolean] Toggle whether X11 forwarding is allowed or not.
 # @param ssh_config_print_motd [Boolean] Toggle whether the MOTD gets printed at login
 # @param ssh_config_print_banner [Boolean] Toggle whether the banner page get presented at the login prompt.
@@ -15,6 +16,7 @@ class ssh (
 
   $ssh_service_enable         = $::ssh::params::ssh_service_enable,
   $ssh_service_ensure         = $::ssh::params::ssh_service_ensure,
+  $ssh_service_config         = $::ssh::params::ssh_service_config,
   $ssh_config_x11forwarding   = $::ssh::params::ssh_config_x11forwarding,
   $ssh_config_print_motd      = $::ssh::params::ssh_config_print_motd,
   $ssh_config_print_banner    = $::ssh::params::ssh_config_print_banner,

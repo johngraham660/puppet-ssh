@@ -7,6 +7,7 @@
 class ssh::params {
   $ssh_service_enable         = true
   $ssh_service_ensure         = 'running'
+  $ssh_service_config         = '/etc/ssh/sshd_config'
   $ssh_config_x11forwarding   = 'no'
   $ssh_config_print_motd      = 'yes'
   $ssh_config_print_banner    = 'yes'

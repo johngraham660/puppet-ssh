@@ -8,7 +8,7 @@ class ssh::config {
 
   file { 'sshd_config':
     ensure  => file,
-    path    => '/etc/ssh/sshd_config',
+    path    => $ssh::ssh_service_config,
     owner   => 'root',
     group   => 'root',
     mode    => '0600',
