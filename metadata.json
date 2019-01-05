@@ -2,9 +2,9 @@
   "name": "virtua-ssh",
   "version": "0.1.0",
   "author": "John Graham",
-  "summary": "",
+  "summary": "Virtua ssh puppet module",
   "license": "Apache-2.0",
-  "source": "",
+  "source": "git@gitlab.virtua.vm:puppet/ssh.git",
   "dependencies": [
 
   ],
@@ -43,14 +43,6 @@
       "operatingsystem": "Ubuntu",
       "operatingsystemrelease": [
         "16.04"
-      ]
-    },
-    {
-      "operatingsystem": "windows",
-      "operatingsystemrelease": [
-        "2008 R2",
-        "2012 R2",
-        "10"
       ]
     }
   ],
