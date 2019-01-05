@@ -1,0 +1,137 @@
+<?xml version='1.0'?>
+<testsuites>
+  <testsuite name='rspec' tests='45' errors='0' failures='12' skipped='0' time='0' timestamp='2019-01-05T15:30:38' hostname='Johns-MacBook-Pro.local' id='0' package='rspec'>
+    <properties/>
+    <testcase classname='rspec.ssh::install on oraclelinux-7-x86_64 should compile into a catalogue without dependency cycles' name='./spec/classes/install_spec.rb:8' time='0'/>
+    <testcase classname='rspec.ssh::install on windows-2008 R2-x64 should compile into a catalogue without dependency cycles' name='./spec/classes/install_spec.rb:8' time='0'/>
+    <testcase classname='rspec.ssh::install on windows-10-x64 should compile into a catalogue without dependency cycles' name='./spec/classes/install_spec.rb:8' time='0'/>
+    <testcase classname='rspec.ssh::install on debian-8-x86_64 should compile into a catalogue without dependency cycles' name='./spec/classes/install_spec.rb:8' time='0'/>
+    <testcase classname='rspec.ssh::install on ubuntu-16.04-x86_64 should compile into a catalogue without dependency cycles' name='./spec/classes/install_spec.rb:8' time='0'/>
+    <testcase classname='rspec.ssh::install on windows-2012 R2-x64 should compile into a catalogue without dependency cycles' name='./spec/classes/install_spec.rb:8' time='0'/>
+    <testcase classname='rspec.ssh::install on scientific-7-x86_64 should compile into a catalogue without dependency cycles' name='./spec/classes/install_spec.rb:8' time='0'/>
+    <testcase classname='rspec.ssh::install on centos-7-x86_64 should compile into a catalogue without dependency cycles' name='./spec/classes/install_spec.rb:8' time='0'/>
+    <testcase classname='rspec.ssh::install on redhat-7-x86_64 should compile into a catalogue without dependency cycles' name='./spec/classes/install_spec.rb:8' time='0'/>
+    <testcase classname='rspec.ssh::params on oraclelinux-7-x86_64 should compile into a catalogue without dependency cycles' name='./spec/classes/params_spec.rb:8' time='0'/>
+    <testcase classname='rspec.ssh::params on windows-2008 R2-x64 should compile into a catalogue without dependency cycles' name='./spec/classes/params_spec.rb:8' time='0'/>
+    <testcase classname='rspec.ssh::params on windows-10-x64 should compile into a catalogue without dependency cycles' name='./spec/classes/params_spec.rb:8' time='0'/>
+    <testcase classname='rspec.ssh::params on debian-8-x86_64 should compile into a catalogue without dependency cycles' name='./spec/classes/params_spec.rb:8' time='0'/>
+    <testcase classname='rspec.ssh::params on ubuntu-16.04-x86_64 should compile into a catalogue without dependency cycles' name='./spec/classes/params_spec.rb:8' time='0'/>
+    <testcase classname='rspec.ssh::params on windows-2012 R2-x64 should compile into a catalogue without dependency cycles' name='./spec/classes/params_spec.rb:8' time='0'/>
+    <testcase classname='rspec.ssh::params on scientific-7-x86_64 should compile into a catalogue without dependency cycles' name='./spec/classes/params_spec.rb:8' time='0'/>
+    <testcase classname='rspec.ssh::params on centos-7-x86_64 should compile into a catalogue without dependency cycles' name='./spec/classes/params_spec.rb:8' time='0'/>
+    <testcase classname='rspec.ssh::params on redhat-7-x86_64 should compile into a catalogue without dependency cycles' name='./spec/classes/params_spec.rb:8' time='0'/>
+    <testcase classname='rspec.ssh::service on oraclelinux-7-x86_64 should compile into a catalogue without dependency cycles' name='./spec/classes/service_spec.rb:8' time='0'/>
+    <testcase classname='rspec.ssh::service on windows-2008 R2-x64 should compile into a catalogue without dependency cycles' name='./spec/classes/service_spec.rb:8' time='0'/>
+    <testcase classname='rspec.ssh::service on windows-10-x64 should compile into a catalogue without dependency cycles' name='./spec/classes/service_spec.rb:8' time='0'/>
+    <testcase classname='rspec.ssh::service on debian-8-x86_64 should compile into a catalogue without dependency cycles' name='./spec/classes/service_spec.rb:8' time='0'/>
+    <testcase classname='rspec.ssh::service on ubuntu-16.04-x86_64 should compile into a catalogue without dependency cycles' name='./spec/classes/service_spec.rb:8' time='0'/>
+    <testcase classname='rspec.ssh::service on windows-2012 R2-x64 should compile into a catalogue without dependency cycles' name='./spec/classes/service_spec.rb:8' time='0'/>
+    <testcase classname='rspec.ssh::service on scientific-7-x86_64 should compile into a catalogue without dependency cycles' name='./spec/classes/service_spec.rb:8' time='0'/>
+    <testcase classname='rspec.ssh::service on centos-7-x86_64 should compile into a catalogue without dependency cycles' name='./spec/classes/service_spec.rb:8' time='0'/>
+    <testcase classname='rspec.ssh::service on redhat-7-x86_64 should compile into a catalogue without dependency cycles' name='./spec/classes/service_spec.rb:8' time='0'/>
+    <testcase classname='rspec.ssh on oraclelinux-7-x86_64 should compile into a catalogue without dependency cycles' name='./spec/classes/ssh_spec.rb:8' time='0'/>
+    <testcase classname='rspec.ssh on debian-8-x86_64 should compile into a catalogue without dependency cycles' name='./spec/classes/ssh_spec.rb:8' time='0'/>
+    <testcase classname='rspec.ssh on ubuntu-16.04-x86_64 should compile into a catalogue without dependency cycles' name='./spec/classes/ssh_spec.rb:8' time='0'/>
+    <testcase classname='rspec.ssh on scientific-7-x86_64 should compile into a catalogue without dependency cycles' name='./spec/classes/ssh_spec.rb:8' time='0'/>
+    <testcase classname='rspec.ssh on centos-7-x86_64 should compile into a catalogue without dependency cycles' name='./spec/classes/ssh_spec.rb:8' time='0'/>
+    <testcase classname='rspec.ssh on redhat-7-x86_64 should compile into a catalogue without dependency cycles' name='./spec/classes/ssh_spec.rb:8' time='0'/>
+    <testcase classname='rspec.ssh::config on oraclelinux-7-x86_64 should compile into a catalogue without dependency cycles' name='./spec/classes/config_spec.rb:8' time='0'>
+      <failure type='failed' message='error during compilation: Could not find resource &apos;Service[sshd]&apos; in parameter &apos;notify&apos; (file: /Users/jgr78/git/virtua/puppet-modules/ssh/spec/fixtures/modules/ssh/manifests/config.pp, line: 16) on node johns-macbook-pro.local'>
+        failed: rspec: ./spec/classes/config_spec.rb:8: error during
+        compilation: Could not find resource &apos;Service[sshd]&apos; in
+        parameter &apos;notify&apos; (file:
+        /Users/jgr78/git/virtua/puppet-modules/ssh/spec/fixtures/modules/ssh/manifests/config.pp, line: 16) on node johns-macbook-pro.local ssh::config on oraclelinux-7-x86_64 should compile into a catalogue without dependency cycles Failure/Error: let(:facts) { os_facts } it { is_expected.to compile } end end 
+      </failure>
+    </testcase>
+    <testcase classname='rspec.ssh::config on windows-2008 R2-x64 should compile into a catalogue without dependency cycles' name='./spec/classes/config_spec.rb:8' time='0'>
+      <failure type='failed' message='error during compilation: Could not find resource &apos;Service[sshd]&apos; in parameter &apos;notify&apos; (file: /Users/jgr78/git/virtua/puppet-modules/ssh/spec/fixtures/modules/ssh/manifests/config.pp, line: 16) on node johns-macbook-pro.local'>
+        failed: rspec: ./spec/classes/config_spec.rb:8: error during
+        compilation: Could not find resource &apos;Service[sshd]&apos; in
+        parameter &apos;notify&apos; (file:
+        /Users/jgr78/git/virtua/puppet-modules/ssh/spec/fixtures/modules/ssh/manifests/config.pp, line: 16) on node johns-macbook-pro.local ssh::config on windows-2008 R2-x64 should compile into a catalogue without dependency cycles Failure/Error: let(:facts) { os_facts } it { is_expected.to compile } end end 
+      </failure>
+    </testcase>
+    <testcase classname='rspec.ssh::config on windows-10-x64 should compile into a catalogue without dependency cycles' name='./spec/classes/config_spec.rb:8' time='0'>
+      <failure type='failed' message='error during compilation: Could not find resource &apos;Service[sshd]&apos; in parameter &apos;notify&apos; (file: /Users/jgr78/git/virtua/puppet-modules/ssh/spec/fixtures/modules/ssh/manifests/config.pp, line: 16) on node johns-macbook-pro.local'>
+        failed: rspec: ./spec/classes/config_spec.rb:8: error during
+        compilation: Could not find resource &apos;Service[sshd]&apos; in
+        parameter &apos;notify&apos; (file:
+        /Users/jgr78/git/virtua/puppet-modules/ssh/spec/fixtures/modules/ssh/manifests/config.pp, line: 16) on node johns-macbook-pro.local ssh::config on windows-10-x64 should compile into a catalogue without dependency cycles Failure/Error: let(:facts) { os_facts } it { is_expected.to compile } end end 
+      </failure>
+    </testcase>
+    <testcase classname='rspec.ssh::config on debian-8-x86_64 should compile into a catalogue without dependency cycles' name='./spec/classes/config_spec.rb:8' time='0'>
+      <failure type='failed' message='error during compilation: Could not find resource &apos;Service[sshd]&apos; in parameter &apos;notify&apos; (file: /Users/jgr78/git/virtua/puppet-modules/ssh/spec/fixtures/modules/ssh/manifests/config.pp, line: 16) on node johns-macbook-pro.local'>
+        failed: rspec: ./spec/classes/config_spec.rb:8: error during
+        compilation: Could not find resource &apos;Service[sshd]&apos; in
+        parameter &apos;notify&apos; (file:
+        /Users/jgr78/git/virtua/puppet-modules/ssh/spec/fixtures/modules/ssh/manifests/config.pp, line: 16) on node johns-macbook-pro.local ssh::config on debian-8-x86_64 should compile into a catalogue without dependency cycles Failure/Error: let(:facts) { os_facts } it { is_expected.to compile } end end 
+      </failure>
+    </testcase>
+    <testcase classname='rspec.ssh::config on ubuntu-16.04-x86_64 should compile into a catalogue without dependency cycles' name='./spec/classes/config_spec.rb:8' time='0'>
+      <failure type='failed' message='error during compilation: Could not find resource &apos;Service[sshd]&apos; in parameter &apos;notify&apos; (file: /Users/jgr78/git/virtua/puppet-modules/ssh/spec/fixtures/modules/ssh/manifests/config.pp, line: 16) on node johns-macbook-pro.local'>
+        failed: rspec: ./spec/classes/config_spec.rb:8: error during
+        compilation: Could not find resource &apos;Service[sshd]&apos; in
+        parameter &apos;notify&apos; (file:
+        /Users/jgr78/git/virtua/puppet-modules/ssh/spec/fixtures/modules/ssh/manifests/config.pp, line: 16) on node johns-macbook-pro.local ssh::config on ubuntu-16.04-x86_64 should compile into a catalogue without dependency cycles Failure/Error: let(:facts) { os_facts } it { is_expected.to compile } end end 
+      </failure>
+    </testcase>
+    <testcase classname='rspec.ssh::config on windows-2012 R2-x64 should compile into a catalogue without dependency cycles' name='./spec/classes/config_spec.rb:8' time='0'>
+      <failure type='failed' message='error during compilation: Could not find resource &apos;Service[sshd]&apos; in parameter &apos;notify&apos; (file: /Users/jgr78/git/virtua/puppet-modules/ssh/spec/fixtures/modules/ssh/manifests/config.pp, line: 16) on node johns-macbook-pro.local'>
+        failed: rspec: ./spec/classes/config_spec.rb:8: error during
+        compilation: Could not find resource &apos;Service[sshd]&apos; in
+        parameter &apos;notify&apos; (file:
+        /Users/jgr78/git/virtua/puppet-modules/ssh/spec/fixtures/modules/ssh/manifests/config.pp, line: 16) on node johns-macbook-pro.local ssh::config on windows-2012 R2-x64 should compile into a catalogue without dependency cycles Failure/Error: let(:facts) { os_facts } it { is_expected.to compile } end end 
+      </failure>
+    </testcase>
+    <testcase classname='rspec.ssh::config on scientific-7-x86_64 should compile into a catalogue without dependency cycles' name='./spec/classes/config_spec.rb:8' time='0'>
+      <failure type='failed' message='error during compilation: Could not find resource &apos;Service[sshd]&apos; in parameter &apos;notify&apos; (file: /Users/jgr78/git/virtua/puppet-modules/ssh/spec/fixtures/modules/ssh/manifests/config.pp, line: 16) on node johns-macbook-pro.local'>
+        failed: rspec: ./spec/classes/config_spec.rb:8: error during
+        compilation: Could not find resource &apos;Service[sshd]&apos; in
+        parameter &apos;notify&apos; (file:
+        /Users/jgr78/git/virtua/puppet-modules/ssh/spec/fixtures/modules/ssh/manifests/config.pp, line: 16) on node johns-macbook-pro.local ssh::config on scientific-7-x86_64 should compile into a catalogue without dependency cycles Failure/Error: let(:facts) { os_facts } it { is_expected.to compile } end end 
+      </failure>
+    </testcase>
+    <testcase classname='rspec.ssh::config on centos-7-x86_64 should compile into a catalogue without dependency cycles' name='./spec/classes/config_spec.rb:8' time='0'>
+      <failure type='failed' message='error during compilation: Could not find resource &apos;Service[sshd]&apos; in parameter &apos;notify&apos; (file: /Users/jgr78/git/virtua/puppet-modules/ssh/spec/fixtures/modules/ssh/manifests/config.pp, line: 16) on node johns-macbook-pro.local'>
+        failed: rspec: ./spec/classes/config_spec.rb:8: error during
+        compilation: Could not find resource &apos;Service[sshd]&apos; in
+        parameter &apos;notify&apos; (file:
+        /Users/jgr78/git/virtua/puppet-modules/ssh/spec/fixtures/modules/ssh/manifests/config.pp, line: 16) on node johns-macbook-pro.local ssh::config on centos-7-x86_64 should compile into a catalogue without dependency cycles Failure/Error: let(:facts) { os_facts } it { is_expected.to compile } end end 
+      </failure>
+    </testcase>
+    <testcase classname='rspec.ssh::config on redhat-7-x86_64 should compile into a catalogue without dependency cycles' name='./spec/classes/config_spec.rb:8' time='0'>
+      <failure type='failed' message='error during compilation: Could not find resource &apos;Service[sshd]&apos; in parameter &apos;notify&apos; (file: /Users/jgr78/git/virtua/puppet-modules/ssh/spec/fixtures/modules/ssh/manifests/config.pp, line: 16) on node johns-macbook-pro.local'>
+        failed: rspec: ./spec/classes/config_spec.rb:8: error during
+        compilation: Could not find resource &apos;Service[sshd]&apos; in
+        parameter &apos;notify&apos; (file:
+        /Users/jgr78/git/virtua/puppet-modules/ssh/spec/fixtures/modules/ssh/manifests/config.pp, line: 16) on node johns-macbook-pro.local ssh::config on redhat-7-x86_64 should compile into a catalogue without dependency cycles Failure/Error: let(:facts) { os_facts } it { is_expected.to compile } end end 
+      </failure>
+    </testcase>
+    <testcase classname='rspec.ssh on windows-2008 R2-x64 should compile into a catalogue without dependency cycles' name='./spec/classes/ssh_spec.rb:8' time='0'>
+      <failure type='failed' message='error during compilation: Parameter path failed on File[/etc/ssh/sshd_config]: File paths must be fully qualified, not &apos;/etc/ssh/sshd_config&apos; (file: /Users/jgr78/git/virtua/puppet-modules/ssh/spec/fixtures/modules/ssh/manifests/config.pp, line: 9)'>
+        failed: rspec: ./spec/classes/ssh_spec.rb:8: error during compilation:
+        Parameter path failed on File[/etc/ssh/sshd_config]: File paths must be
+        fully qualified, not &apos;/etc/ssh/sshd_config&apos; (file:
+        /Users/jgr78/git/virtua/puppet-modules/ssh/spec/fixtures/modules/ssh/manifests/config.pp, line: 9) ssh on windows-2008 R2-x64 should compile into a catalogue without dependency cycles Failure/Error: let(:facts) { os_facts } it { is_expected.to compile } end end 
+      </failure>
+    </testcase>
+    <testcase classname='rspec.ssh on windows-10-x64 should compile into a catalogue without dependency cycles' name='./spec/classes/ssh_spec.rb:8' time='0'>
+      <failure type='failed' message='error during compilation: Parameter path failed on File[/etc/ssh/sshd_config]: File paths must be fully qualified, not &apos;/etc/ssh/sshd_config&apos; (file: /Users/jgr78/git/virtua/puppet-modules/ssh/spec/fixtures/modules/ssh/manifests/config.pp, line: 9)'>
+        failed: rspec: ./spec/classes/ssh_spec.rb:8: error during compilation:
+        Parameter path failed on File[/etc/ssh/sshd_config]: File paths must be
+        fully qualified, not &apos;/etc/ssh/sshd_config&apos; (file:
+        /Users/jgr78/git/virtua/puppet-modules/ssh/spec/fixtures/modules/ssh/manifests/config.pp, line: 9) ssh on windows-10-x64 should compile into a catalogue without dependency cycles Failure/Error: let(:facts) { os_facts } it { is_expected.to compile } end end 
+      </failure>
+    </testcase>
+    <testcase classname='rspec.ssh on windows-2012 R2-x64 should compile into a catalogue without dependency cycles' name='./spec/classes/ssh_spec.rb:8' time='0'>
+      <failure type='failed' message='error during compilation: Parameter path failed on File[/etc/ssh/sshd_config]: File paths must be fully qualified, not &apos;/etc/ssh/sshd_config&apos; (file: /Users/jgr78/git/virtua/puppet-modules/ssh/spec/fixtures/modules/ssh/manifests/config.pp, line: 9)'>
+        failed: rspec: ./spec/classes/ssh_spec.rb:8: error during compilation:
+        Parameter path failed on File[/etc/ssh/sshd_config]: File paths must be
+        fully qualified, not &apos;/etc/ssh/sshd_config&apos; (file:
+        /Users/jgr78/git/virtua/puppet-modules/ssh/spec/fixtures/modules/ssh/manifests/config.pp, line: 9) ssh on windows-2012 R2-x64 should compile into a catalogue without dependency cycles Failure/Error: let(:facts) { os_facts } it { is_expected.to compile } end end 
+      </failure>
+    </testcase>
+    <system-out/>
+    <system-err/>
+  </testsuite>
+</testsuites>
