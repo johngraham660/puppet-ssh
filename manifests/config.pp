@@ -13,8 +13,9 @@ class ssh::config {
     group   => 'root',
     mode    => '0600',
     content => template('ssh/sshd_config.erb'),
-    require => Class['ssh::install'],
-    notify  => Class['ssh::service'],
+    notify  => Service['sshd'],
+    require => Package['openssh-server'],
+
   }
 
   file { '/etc/issue':
