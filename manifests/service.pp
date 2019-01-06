@@ -4,7 +4,7 @@
 #
 # @example
 #   include ssh::service
-class ssh::service {
+class ssh::service inherits ssh {
 
   service { 'sshd':
     ensure => 'running',

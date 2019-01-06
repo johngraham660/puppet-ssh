@@ -4,7 +4,7 @@
 #
 # @example
 
-class ssh::config {
+class ssh::config inherits ssh {
 
   file { 'sshd_config':
     ensure  => file,

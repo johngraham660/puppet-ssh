@@ -28,10 +28,9 @@ class ssh (
 
 ) inherits ssh::params {
 
-  class{'ssh::install': }
-  -> class{'ssh::config': }
-  ~> class{'ssh::service': }
-  -> Class['ssh']
+  include ssh::install
+  include ssh::config
+  include ssh::service
 
   validate_re($ssh_config_x11forwarding, [ '^yes$', '^no$' ])
   validate_re($ssh_config_print_motd, [ '^yes$', '^no$' ])
