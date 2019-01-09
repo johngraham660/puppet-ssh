@@ -25,6 +25,7 @@ class ssh (
   $ssh_config_strictmodes     = $::ssh::params::ssh_config_strictmodes,
   $ssh_config_permitrootlogin = $::ssh::params::ssh_config_permitrootlogin,
   $ssh_package_server         = $::ssh::params::ssh_package_server,
+  $ssh_package_client         = $::ssh::params::ssh_package_client,
 
 ) inherits ssh::params {
 
