@@ -1,19 +1,44 @@
-# ================================================
-# A class to manage the ssh service on Linux hosts
-# ================================================
-# @param ssh_service_enable [Boolean] Ensure the service is enabled in systemd
-# @param ssh_service_ensure [String] Ensure the service is running
-# @param ssh_service_config [String] The full path to the sshd_config file
-# @param ssh_config_x11forwarding [String] Toggle whether X11 forwarding is allowed or not.
-# @param ssh_config_print_motd [String] Toggle whether the MOTD gets printed at login
-# @param ssh_config_print_banner [String] Toggle whether the banner page get presented at the login prompt.
-# @param ssh_config_banner_path [String] Location of the banner message
-# @param ssh_config_use_dns [String] Should only be set to yes if your doing host bases authentication.
-# @param ssh_config_strictmodes [String] Toggle whether ssh should check for file modes and ownership before accepting login requests
-# @param ssh_config_permitrootlogin [String] Determine if direct root login is allowed or not
-# @param ssh_package_server [String] The name of the openssh server package.
-# @param ssh_package_client [String] The name of the openssh client package.
-
+# A description of what this class does
+#
+# @summary Configures and manages SSH on a Linux host
+#
+# @example 
+#   Basic Usage:
+#
+#   class { 'ssh':
+#     ssh_service_enable       => true,
+#     ssh_service_ensure       => 'running',
+#     ssh_config_x11forwarding => 'no',
+#     ssh_config_print_motd    => 'yes',
+#   }
+#
+# @see https://www.unix.com/man-page/centos/5/sshd_config/
+#
+# @param ssh_service_enable 
+#   Ensure the service is enabled in systemd
+# @param ssh_service_ensure 
+#   Ensure the service is running
+# @param ssh_config_x11forwarding 
+#   Toggle whether X11 forwarding is allowed or not.
+# @param ssh_config_print_motd 
+#   Toggle whether the MOTD gets printed at login
+# @param ssh_config_print_banner 
+#   Toggle whether banner text should be displayed before a user authenticates
+# @param ssh_config_banner_content
+#   The contents of what will be /etc/banner (this is a file or template)
+# @param ssh_config_banner_path 
+#   Location of the banner message
+# @param ssh_config_use_dns 
+#   Should only be set to yes if your doing host bases authentication.
+# @param ssh_config_strictmodes 
+#   Toggle whether ssh should check for file modes and ownership before accepting login requests
+# @param ssh_config_permitrootlogin
+#   Determine if direct root login is allowed or not
+# @param ssh_package_server
+#   The name of the openssh server package.
+# @param ssh_package_client
+#   The name of the openssh client package.
+#
 class ssh (
 
   Boolean $ssh_service_enable,
