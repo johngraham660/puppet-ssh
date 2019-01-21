@@ -1,9 +1,7 @@
 # A description of what this class does
 #
-# @summary A short summary of the purpose of this class
+# @summary Manages the configuration files for the SSH service 
 #
-# @example
-
 class ssh::config inherits ssh {
 
   file { 'sshd_config':
