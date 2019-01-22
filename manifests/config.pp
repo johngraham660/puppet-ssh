@@ -1,4 +1,4 @@
-# A description of what this class does
+# The ssh::config class is resposible for the configuration files required by ssh.
 #
 # @summary Manages the configuration files for the SSH service 
 #
