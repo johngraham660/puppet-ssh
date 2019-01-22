@@ -1,10 +1,8 @@
-# A description of what this class does
+# The ssh class is responsible for installing and configuring the Secure Shell service on a Linux server.
 #
 # @summary Configures and manages SSH on a Linux host
 #
-# @example 
-#   Basic Usage:
-#
+# @example Basic Usage
 #   class { 'ssh':
 #     ssh_service_enable       => true,
 #     ssh_service_ensure       => 'running',
@@ -12,12 +10,12 @@
 #     ssh_config_print_motd    => 'yes',
 #   }
 #
-# @see https://www.unix.com/man-page/centos/5/sshd_config/
-#
 # @param ssh_service_enable 
-#   Ensure the service is enabled in systemd
+#  Determines if the service should start with the system boot.  
+#  true will start the autofs service on boot.  
+#  false will not start the autofs service on boot. 
 # @param ssh_service_ensure 
-#   Ensure the service is running
+#   Determines state of the service. Can be set to: running or stopped.
 # @param ssh_config_x11forwarding 
 #   Toggle whether X11 forwarding is allowed or not.
 # @param ssh_config_print_motd 
@@ -38,6 +36,8 @@
 #   The name of the openssh server package.
 # @param ssh_package_client
 #   The name of the openssh client package.
+#
+# @see https://www.unix.com/man-page/centos/1/ssh/   
 #
 class ssh (
 
