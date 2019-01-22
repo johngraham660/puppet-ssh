@@ -5,27 +5,25 @@
 
 **Classes**
 
-* [`ssh`](#ssh): Configures the Secure Shell service on a Redhat Host
-* [`ssh::config`](#sshconfig): manages the configuration files for the SSH service
+* [`ssh`](#ssh): Configures and manages SSH on a Linux host
+* [`ssh::config`](#sshconfig): Manages the configuration files for the SSH service
 * [`ssh::install`](#sshinstall): A short summary of the purpose of this class
-* [`ssh::service`](#sshservice): A short summary of the purpose of this class
+* [`ssh::service`](#sshservice): Manages the state of the SSH service
 
 ## Classes
 
 ### ssh
 
-A description of what this class does
+The ssh class is responsible for installing and configuring the Secure Shell service on a Linux server.
 
 * **See also**
-https://www.unix.com/man-page/centos/5/sshd_config/
+https://www.unix.com/man-page/centos/1/ssh/
 
 #### Examples
 
-##### 
+##### Basic Usage
 
 ```puppet
-Basic Usage:
-
 class { 'ssh':
   ssh_service_enable       => true,
   ssh_service_ensure       => 'running',
@@ -42,13 +40,15 @@ The following parameters are available in the `ssh` class.
 
 Data type: `Boolean`
 
-Ensure the service is enabled in systemd
+Determines if the service should start with the system boot.
+true will start the autofs service on boot.
+false will not start the autofs service on boot.
 
 ##### `ssh_service_ensure`
 
 Data type: `Enum['running', 'stopped']`
 
-Ensure the service is running
+Determines state of the service. Can be set to: running or stopped.
 
 ##### `ssh_config_x11forwarding`
 
@@ -112,7 +112,7 @@ The name of the openssh client package.
 
 ### ssh::config
 
-A description of what this class does
+The ssh::config class is resposible for the configuration files required by ssh.
 
 ### ssh::install
 
