@@ -6,8 +6,14 @@ describe 'ssh::service' do
       let(:facts) { os_facts }
 
       it { is_expected.to compile }
-
       it { is_expected.to contain_class('ssh::service') }
+
+      it do
+        is_expected.to contain_service('sshd').with(
+          'ensure' => 'running',
+          'enable' => 'true',
+        )
+      end
     end
   end
 end
