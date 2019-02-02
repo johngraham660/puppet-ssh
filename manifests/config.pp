@@ -18,7 +18,7 @@ class ssh::config inherits ssh {
 
   file { '/etc/issue':
     ensure => file,
-    name   => '/etc/issue',
+    path   => '/etc/issue',
     source => 'puppet:///modules/ssh/issue',
     owner  => 'root',
     group  => 'root'  ,
