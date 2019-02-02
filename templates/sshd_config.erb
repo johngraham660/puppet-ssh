@@ -40,14 +40,14 @@ SyslogFacility AUTHPRIV
 
 #LoginGraceTime 2m
 
-# ==============================
-# Puppet manages PermitRootLogin
-# ==============================
+# =============================================
+# Puppet manages PermitRootLogin via Hiera data
+# =============================================
 PermitRootLogin <%= scope['ssh::ssh_config_permitrootlogin'] %>
 
-# ===========================
-# Puppet mmanages StrictModes
-# ===========================
+# ==========================================
+# Puppet mmanages StrictModes via Hiera data
+# ==========================================
 StrictModes <%= scope['ssh::ssh_config_strictmodes'] %>
 
 #MaxAuthTries 6
@@ -112,18 +112,18 @@ UsePAM yes
 #AllowTcpForwarding yes
 #GatewayPorts no
 
-# ===============================
-# puppet configures X11Forwarding
-# ===============================
+# ===========================================
+# puppet manages X11Forwarding via Hiera data
+# ===========================================
 X11Forwarding <%= scope['ssh::ssh_config_x11forwarding'] %>
 
 #X11DisplayOffset 10
 #X11UseLocalhost yes
 #PermitTTY yes
 #
-# ======================
-# puppet configures MOTD
-# ======================
+# =======================================
+# puppet manages PrintMotd via Hiera data
+# =======================================
 PrintMotd <%= scope['ssh::ssh_config_print_motd'] %>
 
 #PrintLastLog yes
@@ -136,6 +136,9 @@ PrintMotd <%= scope['ssh::ssh_config_print_motd'] %>
 #ClientAliveCountMax 3
 #ShowPatchLevel no
 
+# ====================================
+# Puppet manages UseDns via Hiera data
+# ====================================
 UseDNS <%= scope['ssh::ssh_config_use_dns'] %>
 
 #PidFile /var/run/sshd.pid
@@ -144,7 +147,9 @@ UseDNS <%= scope['ssh::ssh_config_use_dns'] %>
 #ChrootDirectory none
 #VersionAddendum none
 
-# no default banner path
+# ====================================
+# Puppet manages Banner via Hiera data
+# ====================================
 Banner <%= scope['ssh::ssh_config_banner_path'] %>
 
 #Accept locale-related environment variables
