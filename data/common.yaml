@@ -1,1 +1,13 @@
 ---
+ssh::ssh_service_enable: true
+ssh::ssh_service_ensure: 'running'
+ssh::ssh_config_x11forwarding: 'no'
+ssh::ssh_config_print_motd: 'yes'
+ssh::ssh_config_print_banner: 'yes'
+ssh::ssh_config_banner_content: 'puppet:///modules/ssh/issue'
+ssh::ssh_config_banner_path: '/etc/issue'
+ssh::ssh_config_use_dns: 'no'
+ssh::ssh_config_strictmodes: 'yes'
+ssh::ssh_config_permitrootlogin: 'without-password'
+ssh::ssh_package_server: 'openssh-server'
+ssh::ssh_package_client: 'openssh-client'
