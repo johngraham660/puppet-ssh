@@ -53,11 +53,14 @@ class ssh (
   Enum['yes', 'no', 'without-password'] $ssh_config_permitrootlogin,
   String[1] $ssh_package_server,
   String[1] $ssh_package_client,
-
 ) {
 
-  include ssh::install
-  include ssh::config
-  include ssh::service
+  contain ssh::install
+  contain ssh::config
+  contain ssh::service
+
+  Class['::ssh::install']
+  -> Class['::ssh::config']
+  ~> Class['::ssh:service']
 
 }

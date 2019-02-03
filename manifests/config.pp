@@ -2,7 +2,7 @@
 #
 # @summary Manages the configuration files for the SSH service 
 #
-class ssh::config inherits ssh {
+class ssh::config {
 
   file { 'sshd_config':
     ensure  => file,

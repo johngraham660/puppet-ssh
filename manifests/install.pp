@@ -4,7 +4,7 @@
 #
 # @example
 #   include ssh::install
-class ssh::install inherits ssh {
+class ssh::install {
 
   package { 'openssh-server':
     ensure => present,
