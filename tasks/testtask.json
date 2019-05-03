@@ -1,0 +1,21 @@
+{
+  "puppet_task_version": 1,
+  "supports_noop": false,
+  "description": "Adds the deployment manager aliases to /etc/hosts for WAS cell members",
+  "parameters": {
+    "dpmgr_nodename": {
+      "description": "The hostname of the deployment manager node",
+      "type": "String[1]"
+    },
+
+    "cell_members": {
+      "description": "The members of the websphere cell",
+      "type": "Array"
+    },
+
+    "environment": {
+      "description": "The environment in which the cell resides",
+      "type": "String"
+    }
+  }
+}
